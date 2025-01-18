@@ -17,6 +17,7 @@ class CreateTbMatrix extends Migration
             $table->id();
             $table->integer('panjang');
             $table->integer('tinggi');
+            $table->unique(['panjang','tinggi']);
             // $table->timestamps();
         });
     }
